@@ -1,0 +1,22 @@
+---
+layout: default
+title: 記録
+permalink: /blog/
+---
+<section class="page-intro">
+  <p class="eyebrow">JOURNAL</p>
+  <h1>日々の記録</h1>
+  <p>趣味のことや、覚えておきたい小さな発見を残します。</p>
+</section>
+
+<div class="post-list full-list">
+  {% for post in site.posts %}
+    <a class="post-item" href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+      <span>{{ post.title }}</span>
+    </a>
+  {% else %}
+    <p>まだ記事はありません。</p>
+  {% endfor %}
+</div>
+
