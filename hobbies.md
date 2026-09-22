@@ -28,7 +28,3 @@ permalink: /hobbies/
 ## 束の間のコーヒー
 
 
-```markdown
-![画像の説明]({{ '/assets/images/example.jpg' | relative_url }})
-```
-
